@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-gradient-to-br from-orange/5 to-darkTeal/5 p-24 pb-0">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-gradient-to-br from-orange/5 to-darkTeal/5 p-24 pb-0 text-black bg-white">
       <div className="z-10 w-full max-w-5xl items-center justify-between gap-[60px] text-sm lg:flex lg:flex-col">
         <div className="flex w-full gap-[20px]">
           <Image
@@ -98,7 +98,7 @@ export default function Home() {
       </div>
       <Link
         href="https://github.com/owengretzinger"
-        className="mb-[20px] mt-24 font-serif text-lg text-black transition-colors hover:text-darkTeal"
+        className="mb-[20px] mt-24 font-serif text-lg text-grey transition-colors hover:text-darkTeal"
       >
         Designed & built by Owen Gretzinger
       </Link>

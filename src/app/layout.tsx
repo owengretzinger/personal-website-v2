@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import LightDarkModeToggle from "@/components/LightDarkModeToggle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +17,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider disableTransitionOnChange>
+          <div className="relative">
+            {children}
+            <div className="fixed right-0 top-0">
+              <LightDarkModeToggle />
+            </div>
+          </div>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

@@ -10,7 +10,7 @@ export default function WorkExperienceCard({
   const info = experiences[company];
 
   return (
-    <div className="h-[251px] w-[300px] rounded-[10px] border border-lightGrey text-sm transition-colors hover:bg-lightGrey/10">
+    <div className="h-[251px] w-[300px] rounded-[10px] border border-lightGrey text-sm transition-colors hover:bg-lightGrey/10 dark:hover:bg-lightGrey/30">
       <div className="flex flex-col gap-[20px] px-[20px] py-[20px]">
         {/* job details */}
         <div className="flex flex-col gap-[4px]">

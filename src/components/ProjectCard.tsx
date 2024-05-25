@@ -12,7 +12,7 @@ export default function ProjectCard({
   const info = projects[project];
 
   return (
-    <div className="relative h-[251px] min-h-[251px] w-[300px] min-w-[300px] rounded-[10px] border border-lightGrey text-sm transition-colors hover:bg-lightGrey/10">
+    <div className="relative h-[251px] min-h-[251px] w-[300px] min-w-[300px] rounded-[10px] border border-lightGrey text-sm transition-colors hover:bg-lightGrey/10 dark:hover:bg-lightGrey/30">
       <div className="flex flex-col gap-[20px] px-[20px] py-[20px]">
         {/* image & links */}
         <div className="flex justify-between text-grey">
