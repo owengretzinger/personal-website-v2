@@ -17,7 +17,7 @@ module.exports = {
     },
     fontFamily: {
       serif: ['"Crimson Pro"', ...defaultTheme.fontFamily.serif],
-      sans: ["Segoe UI", ...defaultTheme.fontFamily.sans],
+      sans: ['"Segoe UI"', ...defaultTheme.fontFamily.sans],
     },
     extend: {},
   },

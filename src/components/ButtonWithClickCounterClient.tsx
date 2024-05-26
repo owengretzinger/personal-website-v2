@@ -1,8 +1,9 @@
 "use client";
 
 import { incrementCount } from "@/lib/clickCounterApi";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ButtonWithUpRightArrow } from "./LinkWithUpRightArrow";
+import { useTheme } from "next-themes";
 
 export default function ButtonWithClickCounterClient({
   initialCount,
