@@ -21,20 +21,20 @@ export default function Home() {
             className="aspect-square h-[64px] w-[64px] rounded-[10px] border border-lightGrey md:h-[108px] md:w-[108px] "
             alt="Headshot profile picture"
           />
-          <div className="flex flex-col gap-3 md:gap-[20px]">
-            <div className="flex flex-col md:gap-0">
+          <div className="flex flex-col gap-5 md:gap-7">
+            <div className="flex flex-col">
               <h1 className="font-serif text-4xl leading-9 md:text-6xl md:leading-none">
                 Owen Gretzinger
               </h1>
-              <p className="font-serif text-lg md:text-2xl">
+              <p className="-mb-2 font-serif text-lg md:text-2xl">
                 CS undergrad, fullstack developer
               </p>
             </div>
-            <p className="max-w-[500px] text-sm text-grey md:text-lg">
-              I build meaningful software & lead teams to create impactful
-              solutions through user-centric design
+            <p className="max-w-[330px] text-sm text-grey md:max-w-[420px] md:text-lg">
+              I build software with purpose and create impactful solutions
+              through user-centric design
             </p>
-            <div className="flex flex-col gap-[10px] pt-2 md:flex-row md:pt-0">
+            <div className="flex flex-col gap-[10px] md:flex-row">
               <SocialLink link="linkedin" />
               <SocialLink link="email" />
               <SocialLink link="github" />
