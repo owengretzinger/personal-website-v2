@@ -1,8 +1,8 @@
-import { fetchCount } from "@/lib/clickCounterApi";
+import { fetchCounterClicks } from "@/lib/clickCounterApi";
 import ButtonWithClickCounterClient from "./ButtonWithClickCounterClient";
 
 export default async function ButtonWithClickCounterServer() {
-  const initialCount = await fetchCount();
+  const initialCount = await fetchCounterClicks();
 
   return <ButtonWithClickCounterClient initialCount={initialCount} />;
 }

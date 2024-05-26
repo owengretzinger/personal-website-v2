@@ -1,6 +1,6 @@
 "use server";
 
-export const fetchCount = async () => {
+export async function fetchCounterClicks() {
   try {
     const response = await fetch(
       `https://keyvalue.immanuel.co/api/KeyVal/GetValue/${process.env.CLICKCOUNTKEY}/count`,
@@ -14,16 +14,16 @@ export const fetchCount = async () => {
     console.error(error);
     return 0;
   }
-};
+}
 
-export const incrementCount = async () => {
+export async function incrementGlobalCounterClicks(amount: number) {
   try {
-    const clickCount = await fetchCount();
+    const clickCount = await fetchCounterClicks();
     await fetch(
-      `https://keyvalue.immanuel.co/api/KeyVal/UpdateValue/${process.env.CLICKCOUNTKEY}/count/${clickCount + 1}`,
+      `https://keyvalue.immanuel.co/api/KeyVal/UpdateValue/${process.env.CLICKCOUNTKEY}/count/${clickCount + amount}`,
       { method: "POST" },
     );
   } catch (error) {
     console.error(error);
   }
-};
+}
