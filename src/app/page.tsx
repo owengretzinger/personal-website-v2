@@ -11,9 +11,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-white bg-gradient-to-br from-orange/5 to-darkTeal/5 p-4 pb-0 text-black md:p-24 md:pb-0">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-white bg-gradient-to-br from-orange/10 to-darkTeal/10 p-4 pb-0 text-black md:p-10 md:pb-0 md:pr-0 lg:p-16 lg:pb-0 lg:pr-0 xl:p-24 xl:pb-0 dark:from-orange/5 dark:to-darkTeal/5">
       <div className="z-10 flex w-full flex-col items-center justify-between gap-[60px] text-sm md:max-w-5xl">
-        <div className="flex w-full gap-2 md:gap-[20px] pt-[60px]">
+        <div className="flex w-full flex-col gap-2 pt-[40px] md:flex-row md:gap-[20px]">
           <Image
             src="/pfp.png"
             width={108}
@@ -23,18 +23,18 @@ export default function Home() {
           />
           <div className="flex flex-col gap-3 md:gap-[20px]">
             <div className="flex flex-col md:gap-0">
-              <h1 className="font-serif text-4xl md:text-6xl leading-9 md:leading-none">
+              <h1 className="font-serif text-4xl leading-9 md:text-6xl md:leading-none">
                 Owen Gretzinger
               </h1>
               <p className="font-serif text-lg md:text-2xl">
                 CS undergrad, fullstack developer
               </p>
             </div>
-            <p className="max-w-[500px] text-sm md:text-lg text-grey">
+            <p className="max-w-[500px] text-sm text-grey md:text-lg">
               I build meaningful software & lead teams to create impactful
               solutions through user-centric design
             </p>
-            <div className="flex flex-col gap-[10px] md:flex-row pt-2 md:pt-0">
+            <div className="flex flex-col gap-[10px] pt-2 md:flex-row md:pt-0">
               <SocialLink link="linkedin" />
               <SocialLink link="email" />
               <SocialLink link="github" />
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
         <div className="flex w-full flex-col gap-[20px]">
           <h1 className="font-serif text-4xl">Work Experience</h1>
-          <div className="flex flex-col gap-[20px] md:flex-row">
+          <div className="flex flex-col gap-[20px] md:flex-row md:flex-wrap">
             {Object.keys(experiences).map((experience) => (
               <WorkExperienceCard
                 key={experience}
@@ -100,7 +100,7 @@ export default function Home() {
       </div>
       <Link
         href="https://github.com/owengretzinger"
-        className="mb-[20px] mt-24 font-serif text-lg text-grey transition-colors hover:text-darkTeal"
+        className="mb-[20px] mt-24 font-serif text-lg text-grey transition-colors hover:text-darkTeal focus-visible:text-darkTeal"
       >
         Designed & built by Owen Gretzinger
       </Link>
