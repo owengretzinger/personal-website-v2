@@ -1,30 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root {
+  --color-black: 28 32 36;
+  --color-grey: 95 97 108;
+  --color-orange: 239 89 34;
+  --color-lightGrey: 218 218 218;
+  --color-darkTeal: 0 133 115;
+  --color-lightTeal: 204 243 234;
+  --color-white: 255 255 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+[data-theme="dark"] {
+  --color-black: 220 222 225;
+  --color-grey: 190 190 190;
+  --color-orange: 239 89 34;
+  --color-lightGrey: 50 50 50;
+  --color-darkTeal: 84 212 191;
+  --color-lightTeal: 38 50 52;
+  --color-white: 18 21 23;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
 
 @layer utilities {
   .text-balance {
