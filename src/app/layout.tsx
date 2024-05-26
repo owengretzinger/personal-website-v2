@@ -22,7 +22,7 @@ export default function RootLayout({
         <ThemeProvider disableTransitionOnChange>
           <div className="relative">
             {children}
-            <div className="fixed right-0 top-0">
+            <div className="fixed right-0 top-0 z-20">
               <LightDarkModeToggle />
             </div>
           </div>

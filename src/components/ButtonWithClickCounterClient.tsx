@@ -1,9 +1,8 @@
 "use client";
 
 import { incrementCount } from "@/lib/clickCounterApi";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ButtonWithUpRightArrow } from "./LinkWithUpRightArrow";
-import { useTheme } from "next-themes";
 
 export default function ButtonWithClickCounterClient({
   initialCount,
@@ -14,7 +13,7 @@ export default function ButtonWithClickCounterClient({
   const [clickCount, setClickCount] = useState(initialCount);
 
   return (
-    <div className="flex gap-[40px]">
+    <div className="flex flex-col md:flex-row gap-2 md:gap-[40px]">
       <ButtonWithUpRightArrow
         text="Click a link that doesn't do anything"
         onClick={async () => {
@@ -25,7 +24,7 @@ export default function ButtonWithClickCounterClient({
         }}
       />
       <p
-        className={`text-lg text-grey transition ${showCounter ? "opacity-100" : "translate-y-1 opacity-0"}`}
+        className={`text-base md:text-lg text-grey transition ${showCounter ? "opacity-100" : "translate-y-1 opacity-0"}`}
       >
         {clickCount.toLocaleString()} clicks &#127881;
       </p>
