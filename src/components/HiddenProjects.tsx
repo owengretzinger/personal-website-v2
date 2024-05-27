@@ -14,10 +14,7 @@ export default function HiddenProjects({
   return additionalProjectsShown ? (
     <>{children}</>
   ) : (
-    <button
-      onClick={() => setAdditionalProjectsShown(true)}
-      className="grid h-min grid-cols-4 gap-[20px] rounded-[10px] border border-lightGrey p-[20px]"
-    >
+    <div className="relative grid h-min grid-cols-4 gap-[20px] rounded-[10px] border border-lightGrey p-[20px]">
       {Object.keys(projects)
         .slice(5)
         .map((project) => {
@@ -34,9 +31,13 @@ export default function HiddenProjects({
             />
           );
         })}
-      <div className="col-span-2 flex h-full items-center justify-center rounded bg-lightGrey text-sm text-black">
-        Show all
-      </div>
-    </button>
+      <button
+        onClick={() => setAdditionalProjectsShown(true)}
+        className="col-span-2 flex h-full items-center justify-center rounded bg-lightGrey text-sm text-black"
+      >
+        <span className="absolute inset-0" />
+        <span>Show all</span>
+      </button>
+    </div>
   );
 }

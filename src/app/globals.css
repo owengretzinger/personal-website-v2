@@ -12,9 +12,10 @@
   --color-darkTeal: 0 133 115;
   --color-lightTeal: 204 243 234;
   --color-white: 255 255 255;
+  background-color: rgb(var(--color-white));
 }
 
-[data-theme="dark"] {
+[data-mode="dark"] {
   --color-black: 220 222 225;
   --color-grey: 190 190 190;
   --color-orange: 239 89 34;
@@ -22,6 +23,7 @@
   --color-darkTeal: 84 212 191;
   --color-lightTeal: 38 50 52;
   --color-white: 18 21 23;
+  background-color: rgb(var(--color-white));
 }
 
 @layer utilities {

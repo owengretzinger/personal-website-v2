@@ -1,8 +1,8 @@
+import LightDarkModeToggle from "@/components/LightDarkModeToggle";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import LightDarkModeToggle from "@/components/LightDarkModeToggle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider disableTransitionOnChange>
+        <ThemeProvider disableTransitionOnChange attribute="data-mode">
           <div className="relative">
-            {children}
-            <div className="fixed right-0 top-0">
+            <div className="fixed right-0 top-0 z-20">
               <LightDarkModeToggle />
             </div>
+            {children}
           </div>
         </ThemeProvider>
       </body>

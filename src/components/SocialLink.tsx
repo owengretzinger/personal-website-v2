@@ -42,14 +42,14 @@ export default function SocialLink({ link }: { link: SocialLink }) {
       href={linkNameToInfo[link].href}
       target="_blank"
       rel="noreferrer"
-      className="group/link flex gap-[4px] rounded-full border border-black px-[10px] py-[4px] transition hover:border-darkTeal hover:bg-lightTeal/20"
+      className="group/link flex w-fit items-center gap-[4px] rounded-full border border-grey px-[10px] py-[4px] transition hover:border-darkTeal hover:bg-lightTeal/20"
     >
       <SocialIcon
         size={19}
         stroke={1.25}
-        className="text-black transition group-hover/link:-translate-y-0.5 group-hover/link:text-darkTeal group-focus-visible/link:-translate-y-0.5"
+        className="text-grey transition group-hover/link:-translate-y-0.5 group-hover/link:text-darkTeal group-focus-visible/link:-translate-y-0.5"
       />
-      <p className="text-sm text-black group-hover/link:text-darkTeal">
+      <p className="text-xs text-grey group-hover/link:text-darkTeal md:text-sm">
         {linkNameToInfo[link].text}
       </p>
     </Link>
