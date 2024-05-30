@@ -9,6 +9,9 @@ import { experiences } from "@/lib/workExperienceData";
 import Image from "next/image";
 import Link from "next/link";
 
+export const tagline = "CS undergrad, fullstack developer";
+export const headline = "I build software with purpose and create impactful solutions through user-centric design";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-white bg-gradient-to-br from-orange/10 to-darkTeal/10 p-4 pb-0 text-black md:p-10 md:pb-0 md:pr-0 lg:p-16 lg:pb-0 lg:pr-0 xl:p-24 xl:pb-0 dark:from-orange/5 dark:to-darkTeal/5">
@@ -27,12 +30,11 @@ export default function Home() {
                 Owen Gretzinger
               </h1>
               <p className="-mb-2 font-serif text-lg md:text-2xl">
-                CS undergrad, fullstack developer
+                {tagline}
               </p>
             </div>
             <p className="max-w-[330px] text-sm text-grey md:max-w-[420px] md:text-lg">
-              I build software with purpose and create impactful solutions
-              through user-centric design
+              {headline}
             </p>
             <div className="flex flex-col gap-[10px] md:flex-row">
               <SocialLink link="linkedin" />
