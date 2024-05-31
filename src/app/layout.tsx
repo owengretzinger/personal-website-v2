@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: description,
     url: "https://owengretzinger.com",
     images: {
-      url: "/opengraph-image.png",
+      url: "/opengraph-image.webp",
       alt: "Owen Gretzinger info",
     },
     locale: "en_US",
