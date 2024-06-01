@@ -3,7 +3,7 @@ export const projects = {
     title: "Habits Together",
     image: "/project-images/habits-together.png",
     description:
-      "iOS & Android habit tracking app where you can add friends and do habits together (in development)",
+      "iOS & Android habit tracking app (in development) where you can add friends and do habits together, leading a team of 10",
     link: null,
     github: "https://github.com/owengretzinger/habits-together",
     tags: ["React Native", "Firebase", "Expo"],
@@ -15,7 +15,7 @@ export const projects = {
     description:
       "Website for a professional jazz musician, includes a CMS for editing the website through a dashboard",
     link: "https://mattausgretzinger.com",
-    github: "https://github.com/owengretzinger/mattaus-website",
+    github: "https://github.com/owengretzinger/mattausgretzinger.com",
     tags: ["React", "Next.js", "Decap CMS"],
   },
 
@@ -33,7 +33,7 @@ export const projects = {
     title: "Room Booking System",
     image: "/project-images/room-booking-system.png",
     description:
-      "Innovative McMaster room booking website, built for a Human Computer Interfaces course",
+      "Innovative McMaster room booking website, built for a human computer interfaces course",
     link: "https://room-booking-system-blond.vercel.app/",
     github: "https://github.com/owengretzinger/room-booking-system",
     tags: ["React", "Next.js"],
@@ -43,8 +43,8 @@ export const projects = {
     title: "Personal Website v1",
     image: "/project-images/personal-website-v1.png",
     description: "Previous version of my personal website",
-    link: "https://room-booking-system-blond.vercel.app/",
-    github: "https://github.com/owengretzinger/room-booking-system",
+    link: "https://v1.owengretzinger.com",
+    github: "https://github.com/owengretzinger/personal-website-v1",
     tags: ["React", "Next.js"],
   },
 
@@ -52,7 +52,7 @@ export const projects = {
     title: "Education Data for Change",
     image: "/project-images/education-data-for-change.png",
     description:
-      "Website that displays public school data, built for DeltaHacks 2023",
+      "Website that displays educational data from public schools, built for DeltaHacks 2023",
     link: "https://owengretzinger.com/education-data-for-change",
     github: "https://github.com/owengretzinger/education-data-for-change",
     tags: ["HTML", "JavaScript", "SQL"],
@@ -78,11 +78,21 @@ export const projects = {
     tags: ["C#", "Unity"],
   },
 
+  "HTML Resume Template": {
+    title: "HTML Resume Template",
+    image: "/project-images/html-resume-template.png",
+    description:
+      "Template for creating a mobile-responsive, printable, ATS-friendly resume using TailwindCSS",
+    link: "https://owengretzinger.github.io/html-resume-template/",
+    github: "https://github.com/owengretzinger/html-resume-template",
+    tags: ["HTML", "TailwindCSS"],
+  },
+
   "Tempestuous Turrets": {
     title: "Tempestuous Turrets",
     image: "/project-images/tempestuous-turrets.png",
     description:
-      "Local multiplayer game where you control a turret and try to defeat your opponents, built for DeltaHacks 2022",
+      "Local multiplayer game where you control a turret and try to defeat your opponents, built for Hack the North 2022",
     link: "https://owengretzinger.itch.io/tempestuous-turrets",
     github: "https://github.com/owengretzinger/tempestuous-turrets",
     tags: ["C#", "Unity"],
@@ -93,7 +103,7 @@ export const projects = {
     image: "/project-images/binary-0101.png",
     description:
       "Web app that teaches the basics of binary, built for a software design course",
-    link: "https://cs1xd3.online/ShowModulePublish?modulePublishId=0a6330dc-6e05-447c-820f-293aca08929a&fullscreen=true",
+    link: "https://stabl.rocks/ShowModulePublish?modulePublishId=0a6330dc-6e05-447c-820f-293aca08929a&fullscreen=true",
     github: "https://github.com/owengretzinger/binary-0101",
     tags: ["Elm"],
   },

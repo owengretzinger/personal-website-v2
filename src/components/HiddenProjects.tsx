@@ -16,7 +16,7 @@ export default function HiddenProjects({
   ) : (
     <div className="relative grid h-min grid-cols-4 gap-[20px] rounded-[10px] border border-lightGrey p-[20px]">
       {Object.keys(projects)
-        .slice(5)
+        .slice(5, 11)
         .map((project) => {
           const projectKey = project as keyof typeof projects;
           const info = projects[projectKey];
