@@ -19,6 +19,9 @@ export async function fetchCounterClicks() {
 export async function incrementGlobalCounterClicks(amount: number) {
   try {
     const clickCount = await fetchCounterClicks();
+    if (typeof clickCount !== 'number' || clickCount <= 0) {
+      throw new Error('Error fetching click count from API');
+    }
     await fetch(
       `https://keyvalue.immanuel.co/api/KeyVal/UpdateValue/${process.env.CLICKCOUNTKEY}/count/${clickCount + amount}`,
       { method: "POST" },
