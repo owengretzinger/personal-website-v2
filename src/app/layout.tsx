@@ -1,6 +1,7 @@
 import LightDarkModeToggle from "@/components/LightDarkModeToggle";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import Script from "next/script";
 import "./globals.css";
 import { headline, tagline } from "./page";
 
@@ -45,6 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Script
+        src="https://app.tinyanalytics.io/pixel/DbzDhIpSbsBIoTz9"
+        strategy="lazyOnload"
+      />
       <body>
         <ThemeProvider disableTransitionOnChange attribute="data-mode">
           <div className="relative">
