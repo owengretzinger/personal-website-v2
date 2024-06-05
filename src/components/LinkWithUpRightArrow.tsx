@@ -40,7 +40,7 @@ export function ButtonWithUpRightArrow({
 }
 
 function LinkOrButtonContent({ text }: { text: string }) {
-  // we render the last word separately so that the arrow is in line
+  // we render the last word separately so that the arrow is inline
   const textExceptLastWord = text.split(" ").slice(0, -1).join(" ").concat(" ");
   const lastWord = text.split(" ").pop();
 
