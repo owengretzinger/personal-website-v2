@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <LinkWithUpRightArrow
             text="View resume for more details"
-            href="/resume.pdf"
+            href="/Owen Gretzinger Resume.pdf"
           />
         </section>
         <section className="flex w-full flex-col gap-[20px]">

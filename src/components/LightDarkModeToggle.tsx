@@ -20,6 +20,7 @@ export default function LightDarkModeToggle() {
   return (
     <button
       onClick={() => setTheme(actualTheme === "light" ? "dark" : "light")}
+      aria-label={`Switch to ${actualTheme === "light" ? "dark" : "light"} mode`}
       className="p-4"
     >
       {actualTheme === "dark" ? (
