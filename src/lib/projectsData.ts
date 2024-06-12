@@ -3,7 +3,7 @@ export const projects = {
     title: "Habits Together",
     image: "/project-images/habits-together.webp",
     description:
-      "iOS & Android habit tracking app (in development) where you can add friends and do habits together, leading a team of 10",
+      "iOS & Android habit tracking app (in development) where you can add friends and do habits together; I'm leading a team of 9 people to build it",
     link: null,
     github: "https://github.com/owengretzinger/habits-together",
     tags: ["React Native", "Firebase", "Expo"],
@@ -16,7 +16,7 @@ export const projects = {
       "Website for a professional jazz musician, includes a CMS for editing the website through a dashboard",
     link: "https://mattausgretzinger.com",
     github: "https://github.com/owengretzinger/mattausgretzinger.com",
-    tags: ["React", "Next.js", "Decap CMS"],
+    tags: ["React", "Decap CMS", "Next.js"],
   },
 
   "Simple Terms": {
@@ -65,7 +65,7 @@ export const projects = {
       "Discord bot that analyzes server activity and generates graphs, built for TrailHacks 2021 (1st place)",
     link: "https://devpost.com/software/server-insights",
     github: "https://github.com/owengretzinger/server-insights",
-    tags: ["HTML", "JavaScript", "SQL"],
+    tags: ["Python", "Discord.py", "MatPlotLib"],
   },
 
   "Triangle Ball": {

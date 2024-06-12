@@ -106,6 +106,7 @@ export default function Home() {
       <footer className="mb-[20px] mt-24">
         <Link
           href="https://github.com/owengretzinger"
+          target="_blank"
           className="font-serif text-lg text-grey transition-colors hover:text-darkTeal focus-visible:text-darkTeal"
         >
           Designed & built by Owen Gretzinger
