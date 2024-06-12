@@ -58,6 +58,7 @@ export default function Home() {
           <LinkWithUpRightArrow
             text="View resume for more details"
             href="/Owen Gretzinger Resume.pdf"
+            prefetch={false}
           />
         </section>
         <section className="flex w-full flex-col gap-[20px]">
