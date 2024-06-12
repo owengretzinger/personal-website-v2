@@ -15,9 +15,9 @@ export default function ButtonWithClickCounterClient({
   // batch requests and send every 3s to reduce network requests
   const unsentClicks = useRef(0);
   useEffect(() => {
-    const interval = setInterval(async () => {
+    const interval = setInterval(() => {
       if (unsentClicks.current > 0) {
-        await incrementGlobalCounterClicks(unsentClicks.current);
+        incrementGlobalCounterClicks(unsentClicks.current);
         unsentClicks.current = 0;
       }
     }, 3000);
@@ -29,10 +29,10 @@ export default function ButtonWithClickCounterClient({
     <div className="flex flex-col gap-2 md:flex-row md:gap-[40px]">
       <ButtonWithUpRightArrow
         text="Click a link that doesn't do anything"
-        onClick={async () => {
+        onClick={() => {
+          unsentClicks.current += 1;
           setClickCount((prev) => prev + 1);
           setShowCounter(true);
-          unsentClicks.current += 1;
         }}
       />
       <p
