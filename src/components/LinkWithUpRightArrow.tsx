@@ -4,9 +4,11 @@ import Link from "next/link";
 export default function LinkWithUpRightArrow({
   text,
   href,
+  prefetch = true,
 }: {
   text: string;
   href: string;
+  prefetch?: boolean;
 }) {
   return (
     <Link
@@ -14,6 +16,7 @@ export default function LinkWithUpRightArrow({
       target="_blank"
       rel="noreferrer"
       className="group/link w-fit"
+      prefetch={prefetch}
     >
       <LinkOrButtonContent text={text} />
     </Link>
