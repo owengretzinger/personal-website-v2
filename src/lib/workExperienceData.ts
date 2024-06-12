@@ -1,13 +1,13 @@
 export const experiences = {
   RBC: {
-    title: "Developer, RBC Amplify",
+    title: "Software Developer, Amplify",
     company: "Royal Bank of Canada",
     date: "May 2024 - Aug 2024",
     coop: true,
     image: "/work-experience-images/rbc.webp",
     description:
-      "Building an innovative solution for life & health insurance, from start to finish",
-    tags: ["React", "Rundeck", "OpenShift"],
+      "Building an innovative solution for RBC's life insurance products",
+    tags: ["React", "Node.js", "Azure"],
   },
 
   Pekoe: {
@@ -18,17 +18,17 @@ export const experiences = {
     image: "/work-experience-images/pekoe.webp",
     description:
       "Building a communication platform for the future of the real estate market",
-    tags: ["React", "Next.js", "Supabase"],
+    tags: ["React", "Next.js", "PostgreSQL", "Supabase"],
   },
 
   "Arctic Wolf": {
-    title: "Developer",
+    title: "Software Developer",
     company: "Arctic Wolf",
     date: "May 2023 - Aug 2023",
     coop: true,
     image: "/work-experience-images/aw.webp",
     description:
-      "Developed a Chrome extension used by 150 security analysts to speed up their workflows",
-    tags: ["JavaScript", "Node.js"],
+      "Worked on a Chrome extension used by security analysts to speed up their workflows",
+    tags: ["JavaScript", "Node.js", "CSS"],
   },
 };
