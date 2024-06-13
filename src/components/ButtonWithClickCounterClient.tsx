@@ -15,15 +15,18 @@ export default function ButtonWithClickCounterClient({
   const [showCounter, setShowCounter] = useState(false);
   const [clickCount, setClickCount] = useState(initialServerCount);
 
-  // batch requests and send every 3s to reduce network requests
-  const unsentClicks = useRef(0);
+  // fetch initial count
   useEffect(() => {
     const updateInitialCount = async () => {
       const initialCount = await fetchCounterClicks();
       setClickCount(initialCount);
     };
     updateInitialCount();
+  });
 
+  // batch requests and send every 3s to reduce network requests
+  const unsentClicks = useRef(0);
+  useEffect(() => {
     const interval = setInterval(() => {
       if (unsentClicks.current > 0) {
         incrementGlobalCounterClicks(unsentClicks.current);
