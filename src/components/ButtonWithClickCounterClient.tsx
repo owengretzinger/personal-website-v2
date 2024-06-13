@@ -1,16 +1,28 @@
 "use client";
 
-import { incrementGlobalCounterClicks } from "@/lib/clickCounterApi";
+import {
+  fetchCounterClicks,
+  incrementGlobalCounterClicks,
+} from "@/lib/clickCounterApi";
 import { useEffect, useRef, useState } from "react";
 import { ButtonWithUpRightArrow } from "./LinkWithUpRightArrow";
 
 export default function ButtonWithClickCounterClient({
-  initialCount,
+  initialServerCount,
 }: {
-  initialCount: number;
+  initialServerCount: number;
 }) {
   const [showCounter, setShowCounter] = useState(false);
-  const [clickCount, setClickCount] = useState(initialCount);
+  const [clickCount, setClickCount] = useState(initialServerCount);
+
+  // fetch initial count
+  useEffect(() => {
+    const updateInitialCount = async () => {
+      const initialCount = await fetchCounterClicks();
+      setClickCount(initialCount);
+    };
+    updateInitialCount();
+  }, []);
 
   // batch requests and send every 3s to reduce network requests
   const unsentClicks = useRef(0);

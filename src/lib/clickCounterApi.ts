@@ -17,7 +17,6 @@ const firebaseConfig = {
   messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.FIREBASE_APP_ID,
 };
-
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const counterRef = doc(db, "click-counter", "counter");
