@@ -3,7 +3,7 @@
 import { initializeApp } from "firebase/app";
 import {
   doc,
-  getDoc,
+  getDocFromServer,
   getFirestore,
   increment,
   updateDoc,
@@ -24,7 +24,7 @@ const counterRef = doc(db, "click-counter", "counter");
 
 export async function fetchCounterClicks() {
   try {
-    const docSnap = await getDoc(counterRef);
+    const docSnap = await getDocFromServer(counterRef);
     return docSnap.data()!.count;
   } catch (e) {
     console.error(e);
