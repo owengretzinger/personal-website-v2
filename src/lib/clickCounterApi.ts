@@ -18,10 +18,10 @@ const firebaseConfig = {
   appId: process.env.FIREBASE_APP_ID,
 };
 
-const app = initializeApp(firebaseConfig);
 
 export async function fetchCounterClicks() {
   try {
+    const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
     const counterRef = doc(db, "click-counter", "counter");
     const docSnap = await getDoc(counterRef);
@@ -33,6 +33,7 @@ export async function fetchCounterClicks() {
 }
 
 export async function incrementGlobalCounterClicks(amount: number) {
+  const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
   const counterRef = doc(db, "click-counter", "counter");
   await updateDoc(counterRef, { count: increment(amount) });
