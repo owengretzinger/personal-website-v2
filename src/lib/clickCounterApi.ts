@@ -3,9 +3,9 @@
 import { initializeApp } from "firebase/app";
 import {
   doc,
+  getDoc,
   getFirestore,
   increment,
-  onSnapshot,
   updateDoc,
 } from "firebase/firestore";
 
@@ -19,30 +19,21 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const counterRef = doc(db, "click-counter", "counter");
 
 export async function fetchCounterClicks() {
-  const unsubscribe = onSnapshot(
-    counterRef,
-    (docSnap) => {
-      if (docSnap.exists()) {
-        return docSnap.data()!.count;
-      } else {
-        console.log("No such document!");
-        return 0;
-      }
-    },
-    (error) => {
-      console.error("Error fetching document: ", error);
-      return 0;
-    },
-  );
-
-  // Remember to unsubscribe from the snapshot when you're done.
-  return () => unsubscribe();
+  try {
+    const db = getFirestore(app);
+    const counterRef = doc(db, "click-counter", "counter");
+    const docSnap = await getDoc(counterRef);
+    return docSnap.data()!.count;
+  } catch (e) {
+    console.error(e);
+    return 0;
+  }
 }
 
 export async function incrementGlobalCounterClicks(amount: number) {
+  const db = getFirestore(app);
+  const counterRef = doc(db, "click-counter", "counter");
   await updateDoc(counterRef, { count: increment(amount) });
 }
