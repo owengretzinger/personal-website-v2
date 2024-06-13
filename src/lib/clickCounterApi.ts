@@ -20,10 +20,10 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const counterRef = doc(db, "click-counter", "counter");
 
 export async function fetchCounterClicks() {
   try {
+    const counterRef = doc(db, "click-counter", "counter");
     const docSnap = await getDocFromServer(counterRef);
     return docSnap.data()!.count;
   } catch (e) {
@@ -33,5 +33,6 @@ export async function fetchCounterClicks() {
 }
 
 export async function incrementGlobalCounterClicks(amount: number) {
+  const counterRef = doc(db, "click-counter", "counter");
   await updateDoc(counterRef, { count: increment(amount) });
 }
