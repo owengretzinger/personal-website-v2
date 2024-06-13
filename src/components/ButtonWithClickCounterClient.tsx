@@ -22,7 +22,7 @@ export default function ButtonWithClickCounterClient({
       setClickCount(initialCount);
     };
     updateInitialCount();
-  });
+  }, []);
 
   // batch requests and send every 3s to reduce network requests
   const unsentClicks = useRef(0);
