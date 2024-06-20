@@ -17,8 +17,8 @@ module.exports = {
       white: "rgb(var(--color-white) / <alpha-value>)",
     },
     fontFamily: {
-      serif: ['"Crimson Pro"', ...defaultTheme.fontFamily.serif],
-      sans: ['"Segoe UI"', ...defaultTheme.fontFamily.sans],
+      serif: ["var(--font-crimson-pro)"],
+      sans: ["var(--font-inter)"],
     },
     extend: {},
   },

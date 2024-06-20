@@ -1,6 +1,7 @@
 import LightDarkModeToggle from "@/components/LightDarkModeToggle";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import { Crimson_Pro, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { headline, tagline } from "./page";
@@ -39,13 +40,29 @@ export const metadata: Metadata = {
   },
 };
 
+const crimson_pro = Crimson_Pro({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-crimson-pro",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${crimson_pro.variable} ${inter.variable}`}
+    >
       <Script
         src="https://app.tinyanalytics.io/pixel/DbzDhIpSbsBIoTz9"
         strategy="lazyOnload"
