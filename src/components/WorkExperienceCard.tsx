@@ -25,6 +25,7 @@ export default function WorkExperienceCard({
               height={48}
               alt={`${info.company} logo`}
               className="h-[48px] w-[48px] rounded border border-lightGrey"
+              priority
             />
             <div className="flex flex-col text-black">
               <span className="font-semibold">{info.title}</span>
