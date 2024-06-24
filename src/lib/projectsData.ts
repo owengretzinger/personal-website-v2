@@ -3,8 +3,8 @@ export const projects = {
     title: "Habits Together",
     image: "/project-images/habits-together.webp",
     description:
-      "iOS & Android habit tracking app (in development) where you can add friends and do habits together; I'm leading a team of 9 people to build it",
-    link: null,
+      "Mobile app (in development) where you can track habits together with friends; I'm leading a team of 9 people to build it",
+    link: "https://habits-together.owengretzinger.com/",
     github: "https://github.com/owengretzinger/habits-together",
     tags: ["React Native", "Firebase", "Expo"],
   },
