@@ -32,5 +32,8 @@ export async function fetchCounterClicks() {
 }
 
 export async function incrementGlobalCounterClicks(amount: number) {
+  if (amount > 40) {
+    throw "Hacker detected";
+  }
   await updateDoc(counterRef, { count: increment(amount) });
 }
