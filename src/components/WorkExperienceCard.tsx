@@ -27,7 +27,7 @@ export default function WorkExperienceCard({
               className="h-[48px] w-[48px] rounded border border-lightGrey"
               priority
             />
-            <div className="flex flex-col text-black">
+            <div className="mt-1 flex flex-col text-black">
               <span className="font-semibold">{info.title}</span>
               <span>{info.company}</span>
             </div>

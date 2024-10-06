@@ -9,7 +9,7 @@ import { experiences } from "@/lib/workExperienceData";
 import Image from "next/image";
 import Link from "next/link";
 
-export const tagline = "CS undergrad, fullstack developer";
+export const tagline = "CS undergrad, software developer";
 export const headline =
   "I build software with purpose and create impactful solutions through user-centric design";
 
@@ -30,23 +30,23 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5 md:gap-7">
             <div className="flex flex-col">
-              <h1 className="font-serif text-4xl leading-9 md:text-6xl md:leading-none">
+              <h1 className="font-header text-4xl leading-9 md:text-6xl md:leading-none">
                 Owen Gretzinger
               </h1>
-              <p className="-mb-2 font-serif text-lg md:text-2xl">{tagline}</p>
+              <p className="-mb-2 font-header text-lg md:text-2xl">{tagline}</p>
             </div>
             <p className="max-w-[330px] text-sm text-grey md:max-w-[420px] md:text-lg">
               {headline}
             </p>
             <div className="flex flex-col gap-[10px] md:flex-row">
               <SocialLink link="linkedin" />
-              <SocialLink link="email" />
               <SocialLink link="github" />
+              <SocialLink link="email" />
             </div>
           </div>
         </section>
         <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-4xl">Work Experience</h1>
+          <h1 className="font-header text-4xl">Work Experience</h1>
           <div className="flex flex-col gap-[20px] md:flex-row md:flex-wrap">
             {Object.keys(experiences).map((experience) => (
               <WorkExperienceCard
@@ -62,7 +62,7 @@ export default function Home() {
           />
         </section>
         <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-4xl">Projects</h1>
+          <h1 className="font-header text-4xl">Projects</h1>
           <div className="flex flex-wrap gap-[20px]">
             {Object.keys(projects)
               .slice(0, 5)
@@ -89,7 +89,7 @@ export default function Home() {
           />
         </section>
         <section className="flex w-full flex-col gap-[20px]">
-          <h1 className="font-serif text-4xl">That&apos;s all</h1>
+          <h1 className="font-header text-4xl">That&apos;s all</h1>
           <div className="flex flex-col gap-[10px]">
             <LinkWithUpRightArrow
               text="Add me on LinkedIn"
@@ -107,7 +107,7 @@ export default function Home() {
         <Link
           href="https://github.com/owengretzinger"
           target="_blank"
-          className="font-serif text-lg text-grey transition-colors hover:text-darkTeal focus-visible:text-darkTeal"
+          className="font-header text-lg text-grey transition-colors hover:text-darkTeal focus-visible:text-darkTeal"
         >
           Designed & built by Owen Gretzinger
         </Link>

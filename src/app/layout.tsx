@@ -1,7 +1,7 @@
 import LightDarkModeToggle from "@/components/LightDarkModeToggle";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import { Crimson_Pro, Inter } from "next/font/google";
+import { Bricolage_Grotesque, Crimson_Pro } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { headline, tagline } from "./page";
@@ -46,10 +46,10 @@ const crimson_pro = Crimson_Pro({
   variable: "--font-crimson-pro",
 });
 
-const inter = Inter({
+const bricolage_grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-bricolage_grotesque",
 });
 
 export default function RootLayout({
@@ -61,7 +61,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${crimson_pro.variable} ${inter.variable}`}
+      className={`${crimson_pro.variable} ${bricolage_grotesque.variable}`}
     >
       <Script
         src="https://app.tinyanalytics.io/pixel/DbzDhIpSbsBIoTz9"
@@ -69,7 +69,7 @@ export default function RootLayout({
       />
       <body>
         <ThemeProvider disableTransitionOnChange attribute="data-mode">
-          <div className="relative">
+          <div className="relative font-light font-body">
             <div className="fixed right-0 top-0 z-20">
               <LightDarkModeToggle />
             </div>
