@@ -1,4 +1,26 @@
 export const experiences = {
+  "McMaster Engineering Society": {
+    title: "Software Developer",
+    company: "McMaster Eng. Society",
+    date: "Aug 2024 - Present",
+    coop: false,
+    image: "/work-experience-images/mes.png",
+    description:
+      "Developing a new study room booking portal for the Hatch Centre",
+    tags: ["React", "Next.js", "MongoDB"],
+  },
+
+  DeltaHacks: {
+    title: "Technical Executive",
+    company: "DeltaHacks",
+    date: "Sep 2024 - Present",
+    coop: false,
+    image: "/work-experience-images/deltahacks.png",
+    description:
+      "Building the landing page and application portal for DeltaHacks 11",
+    tags: ["React", "Next.js"],
+  },
+
   RBC: {
     title: "Software Developer, Amplify",
     company: "Royal Bank of Canada",
@@ -6,19 +28,19 @@ export const experiences = {
     coop: true,
     image: "/work-experience-images/rbc.webp",
     description:
-      "Building an innovative solution for RBC's life insurance products",
-    tags: ["React", "Node.js", "Azure"],
+      "Invented and built a patent-pending life insurance application model with a small team of students",
+    tags: ["React", "Node.js", "Figma"],
   },
 
-  Pekoe: {
-    title: "Software Engineer",
-    company: "Pekoe Development",
-    date: "Dec 2023 - Present",
+  "McMaster University": {
+    title: "Teaching Assistant",
+    company: "McMaster University",
+    date: "Sep 2023 - Dec 2023",
     coop: false,
-    image: "/work-experience-images/pekoe.webp",
+    image: "/work-experience-images/mcmaster.webp",
     description:
-      "Building a communication platform for the future of the real estate market",
-    tags: ["React", "Next.js", "PostgreSQL", "Supabase"],
+      "Taught third-year software engineering students about data structures and algorithms (SFWRENG 3XB3)",
+    tags: ["Python"],
   },
 
   "Arctic Wolf": {

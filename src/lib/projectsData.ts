@@ -3,9 +3,9 @@ export const projects = {
     title: "Habits Together",
     image: "/project-images/habits-together.webp",
     description:
-      "Mobile app in development where you can track habits together with friends (I'm leading a team of 9 people)",
+      "Leader of team building mobile app where you can track habits together with friends",
     link: "https://habitstogether.app/",
-    github: "https://github.com/owengretzinger/habits-together",
+    github: "https://github.com/habits-together/app",
     tags: ["React Native", "Firebase", "Expo"],
   },
 
