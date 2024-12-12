@@ -9,6 +9,16 @@ export const projects = {
     tags: ["React Native", "Firebase", "Expo"],
   },
 
+  "Symphony": {
+    title: "Symphony",
+    image: "/project-images/symphony.webp",
+    description:
+      "Real-time multiplayer web app where you create drawings that get transformed into music",
+    link: "https://github.com/user-attachments/assets/19c79cdc-0c84-4a63-b796-d89baff4029e",
+    github: "https://github.com/owengretzinger/symphony",
+    tags: ["React", "Websockets", "Express", "Node.js", "Next.js"],
+  },
+
   "Jazz Musician Website": {
     title: "Jazz Musician Website",
     image: "/project-images/jazz-musician-website.webp",
