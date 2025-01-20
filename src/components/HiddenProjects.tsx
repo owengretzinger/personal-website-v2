@@ -16,7 +16,7 @@ export default function HiddenProjects({
   ) : (
     <div className="relative grid h-min grid-cols-4 gap-[20px] rounded-[10px] border border-lightGrey p-[20px]">
       {Object.keys(projects)
-        .slice(5, 11)
+        .slice(5, 15)
         .map((project) => {
           const projectKey = project as keyof typeof projects;
           const info = projects[projectKey];
@@ -36,7 +36,7 @@ export default function HiddenProjects({
         className="col-span-2 flex h-full items-center justify-center rounded bg-lightGrey text-sm text-black"
       >
         <span className="absolute inset-0" />
-        <span>Show all</span>
+        <span>Show all {Object.keys(projects).length}</span>
       </button>
     </div>
   );
