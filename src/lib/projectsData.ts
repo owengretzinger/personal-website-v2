@@ -1,4 +1,14 @@
-export const projects = {
+type Project = {
+  title: string;
+  image: string;
+  description: string;
+  link: string;
+  github: string;
+  demo?: string;  // optional demo property
+  tags: string[];
+};
+
+export const projects: Record<string, Project> = {
   "Habits Together": {
     title: "Habits Together",
     image: "/project-images/habits-together.webp",
@@ -7,6 +17,17 @@ export const projects = {
     link: "https://habitstogether.app/",
     github: "https://github.com/habits-together/app",
     tags: ["React Native", "Firebase", "Expo"],
+  },
+
+  "(A)Intern": {
+    title: "(A)Intern",
+    image: "/project-images/aintern.webp",
+    description:
+      "3D AI video meeting assistant that responds to questions in real-time and takes notes (QHacks 2025)",
+    link: "https://devpost.com/software/ai-intern",
+    github: "https://github.com/owengretzinger/aintern",
+    demo: "https://www.youtube.com/embed/C3fAWMhHPIY",
+    tags: ["React", "Express", "OpenAI API", "Websockets", "Recall.ai"],
   },
 
   "Monkey Mind": {
@@ -32,6 +53,7 @@ export const projects = {
       "Real-time multiplayer web app where your drawings get transformed into music (HackWestern 2024)",
     link: "https://github.com/user-attachments/assets/19c79cdc-0c84-4a63-b796-d89baff4029e",
     github: "https://github.com/owengretzinger/symphony",
+    demo: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7270103698960248832?compact=1",
     tags: ["React", "Websockets", "Express", "Node.js", "Next.js"],
   },
 

@@ -3,6 +3,7 @@ import { IconArrowUpRight, IconBrandGithub } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import TechnologyTag from "./TechnologyTag";
+import VideoModal from "./VideoModal";
 
 export default function ProjectCard({
   project,
@@ -23,19 +24,22 @@ export default function ProjectCard({
             alt={`${info.title} logo`}
             className="h-[32px] w-[32px] rounded border border-lightGrey"
           />
-          <Link
-            href={info.github}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="group/link relative z-10 flex items-center gap-[4px] text-grey transition-all hover:text-darkTeal focus-visible:text-darkTeal"
-          >
-            <IconBrandGithub
-              size={19}
-              stroke={1.25}
-              className={`transition group-hover/link:-translate-y-1 group-hover/link:text-darkTeal group-focus-visible/link:-translate-y-1`}
-            />
-            <p className="">GitHub</p>
-          </Link>
+          <div className="flex items-center gap-4">
+            {info.demo && <VideoModal demoUrl={info.demo} />}
+            <Link
+              href={info.github}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="group/link relative z-10 flex items-center gap-[4px] text-grey transition-all hover:text-darkTeal focus-visible:text-darkTeal"
+            >
+              <IconBrandGithub
+                size={19}
+                stroke={1.25}
+                className={`transition group-hover/link:-translate-y-1 group-hover/link:text-darkTeal group-focus-visible/link:-translate-y-1`}
+              />
+              <p className="">GitHub</p>
+            </Link>
+          </div>
         </div>
         {/* title & desc */}
         <div className="flex flex-col gap-[6px]">
