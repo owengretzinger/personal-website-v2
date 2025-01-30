@@ -9,7 +9,7 @@ import { experiences } from "@/lib/workExperienceData";
 import Image from "next/image";
 import Link from "next/link";
 
-export const tagline = "CS undergrad, software developer";
+export const tagline = "CS undergrad, software engineer";
 export const headline =
   "I build software with purpose and create impactful solutions through user-centric design";
 
@@ -33,11 +33,11 @@ export default function Home() {
               <h1 className="font-header text-4xl leading-9 md:text-6xl md:leading-none">
                 Owen Gretzinger
               </h1>
-              <p className="-mb-2 font-header text-lg md:text-2xl">{tagline}</p>
+              <p className="-mb-2 font-header text-grey text-lg md:text-2xl">{tagline}</p>
             </div>
-            <p className="max-w-[330px] text-sm text-grey md:max-w-[420px] md:text-lg">
+            {/* <p className="max-w-[330px] text-sm text-grey md:max-w-[420px] md:text-lg">
               {headline}
-            </p>
+            </p> */}
             <div className="flex flex-col gap-[10px] md:flex-row">
               <SocialLink link="linkedin" />
               <SocialLink link="github" />
