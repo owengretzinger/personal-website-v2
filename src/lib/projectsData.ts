@@ -24,7 +24,7 @@ export const projects: Record<string, Project> = {
     image: "/project-images/aintern.webp",
     description:
       "3D AI video meeting assistant that responds to questions in real-time and takes notes (QHacks 2025)",
-    link: "https://devpost.com/software/ai-intern",
+    link: "https://github.com/owengretzinger/aintern",
     github: "https://github.com/owengretzinger/aintern",
     demo: "https://www.youtube.com/embed/C3fAWMhHPIY",
     tags: ["React", "Express", "OpenAI API", "Websockets", "Recall.ai"],
