@@ -44,12 +44,13 @@ const crimson_pro = Crimson_Pro({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-crimson-pro",
+  weight: ["400", "500", "600", "700"],
 });
 
 const bricolage_grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-bricolage_grotesque",
+  variable: "--font-bricolage-grotesque",
 });
 
 export default function RootLayout({
@@ -69,7 +70,7 @@ export default function RootLayout({
       />
       <body>
         <ThemeProvider disableTransitionOnChange attribute="data-mode">
-          <div className="relative font-light font-body">
+          <div className="relative font-body font-light">
             <div className="fixed right-0 top-0 z-20">
               <LightDarkModeToggle />
             </div>

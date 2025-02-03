@@ -17,8 +17,8 @@ module.exports = {
       white: "rgb(var(--color-white) / <alpha-value>)",
     },
     fontFamily: {
-      header: ["var(--font-crimson-pro)"],
-      body: ["var(--font-bricolage_grotesque)"],
+      header: ["var(--font-crimson-pro)", "serif"],
+      body: ["var(--font-bricolage-grotesque)", "sans-serif"],
     },
     extend: {},
   },
