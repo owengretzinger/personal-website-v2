@@ -6,19 +6,19 @@ export const experiences = {
     coop: false,
     image: "/work-experience-images/mes.png",
     description:
-      "Developing a new study room booking portal for the Hatch Centre",
+      "Developed a new study room booking portal for the Hatch Centre, building the clubs portal",
     tags: ["React", "Next.js", "MongoDB"],
   },
 
   DeltaHacks: {
     title: "Technical Executive",
     company: "DeltaHacks",
-    date: "Sep 2024 - Present",
+    date: "Sep 2024 - Jan 2025",
     coop: false,
     image: "/work-experience-images/deltahacks.png",
     description:
-      "Building the landing page and application portal for DeltaHacks 11",
-    tags: ["React", "Next.js"],
+      "Built features for the DeltaHacks 11 application review and judging portals",
+    tags: ["React", "Next.js", "tRPC", "Prisma"],
   },
 
   RBC: {
