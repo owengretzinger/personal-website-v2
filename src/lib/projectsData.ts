@@ -4,7 +4,7 @@ type Project = {
   description: string;
   link: string;
   github: string;
-  demo?: string;  // optional demo property
+  demo?: string;
   tags: string[];
 };
 
@@ -16,7 +16,7 @@ export const projects: Record<string, Project> = {
       "Leader of team building mobile app where you can track habits together with friends",
     link: "https://habitstogether.app/",
     github: "https://github.com/habits-together/app",
-    tags: ["React Native", "Firebase", "Expo"],
+    tags: ["React Native", "Firebase", "Expo", "React Query"],
   },
 
   HackMate: {
@@ -48,6 +48,7 @@ export const projects: Record<string, Project> = {
       "Chrome extension where you have a pet monkey that wears hats, includes social features (UofTHacks 2025)",
     link: "https://monkeyr.us/",
     github: "https://github.com/owengretzinger/monkey-mind",
+    demo: "https://www.youtube.com/embed/qPSXmX-yBFU",
     tags: [
       "React",
       "Chrome Extensions API",
