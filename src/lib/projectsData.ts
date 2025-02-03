@@ -19,6 +19,17 @@ export const projects: Record<string, Project> = {
     tags: ["React Native", "Firebase", "Expo"],
   },
 
+  HackMate: {
+    title: "HackMate",
+    image: "/project-images/hackmate.png",
+    description:
+      "Get hackathon project inspiration, generate documentation, draft a pitch (🏆 1st overall GDG Mac-a-Thon 2025 🏆)",
+    link: "https://devpost.com/software/hackmate-3brfmx",
+    github: "https://github.com/owengretzinger/hackmate",
+    demo: "https://www.youtube.com/embed/mmdLophBzpY?si=nUhk0mPZUE0g3rDL",
+    tags: ["Next.js", "React", "tRPC", "Drizzle", "GCP", "Gemini", "Puppeteer"],
+  },
+
   "(A)Intern": {
     title: "(A)Intern",
     image: "/project-images/aintern.webp",
