@@ -16,6 +16,7 @@ export const projects: Record<string, Project> = {
       "Leader of team building mobile app where you can track habits together with friends",
     link: "https://habitstogether.app/",
     github: "https://github.com/habits-together/app",
+    demo: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7214987812134076416?compact=1",
     tags: ["React Native", "Firebase", "Expo", "React Query"],
   },
 
@@ -26,7 +27,7 @@ export const projects: Record<string, Project> = {
       "Get hackathon project inspiration, generate documentation, draft a pitch (🏆 1st overall GDG Mac-a-Thon 2025 🏆)",
     link: "https://devpost.com/software/hackmate-3brfmx",
     github: "https://github.com/owengretzinger/hackmate",
-    demo: "https://www.youtube.com/embed/mmdLophBzpY?si=nUhk0mPZUE0g3rDL",
+    demo: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7292087689204387840?compact=1",
     tags: ["Next.js", "React", "tRPC", "Drizzle", "GCP", "Gemini", "Puppeteer"],
   },
 
@@ -37,7 +38,7 @@ export const projects: Record<string, Project> = {
       "3D AI video meeting assistant that responds to questions in real-time and takes notes (QHacks 2025)",
     link: "https://github.com/owengretzinger/aintern",
     github: "https://github.com/owengretzinger/aintern",
-    demo: "https://www.youtube.com/embed/C3fAWMhHPIY",
+    demo: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7290778351613476864?compact=1",
     tags: ["React", "Express", "OpenAI API", "Websockets", "Recall.ai"],
   },
 
