@@ -24,7 +24,7 @@ export const projects: Record<string, Project> = {
     title: "HackMate",
     image: "/project-images/hackmate.png",
     description:
-      "Get hackathon project inspiration, generate documentation, draft a pitch (🏆 1st overall GDG Mac-a-Thon 2025 🏆)",
+      "Get hackathon project inspiration, generate documentation, draft a pitch (GDG Mac-a-Thon 2025 1st overall)",
     link: "https://devpost.com/software/hackmate-3brfmx",
     github: "https://github.com/owengretzinger/hackmate",
     demo: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7292087689204387840?compact=1",
