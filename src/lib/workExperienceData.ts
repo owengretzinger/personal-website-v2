@@ -1,4 +1,15 @@
 export const experiences = {
+  "Boardy": {
+    title: "Software Engineer",
+    company: "Boardy",
+    date: "Feb 2025 - Present",
+    coop: false,
+    image: "/work-experience-images/boardy.jpeg",
+    description:
+      "Taking the world's most advanced AI super connector to the next level",
+    tags: ["Python"],
+  },
+
   "McMaster Engineering Society": {
     title: "Software Developer",
     company: "McMaster Eng. Society",
@@ -6,7 +17,7 @@ export const experiences = {
     coop: false,
     image: "/work-experience-images/mes.png",
     description:
-      "Developed a new study room booking portal for the Hatch Centre, building the clubs portal",
+      "Developed a new study room booking portal for the Hatch Centre",
     tags: ["React", "Next.js", "MongoDB"],
   },
 
