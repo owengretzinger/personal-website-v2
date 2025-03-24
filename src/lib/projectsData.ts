@@ -9,11 +9,22 @@ type Project = {
 };
 
 export const projects: Record<string, Project> = {
+  "gitreadme.dev": {
+    title: "gitreadme.dev",
+    image: "/project-images/gitreadme.png",
+    description:
+      "Instantly generate high-quality README files using AI that understands your codebase",
+    link: "https://gitreadme.dev",
+    github: "https://github.com/owengretzinger/gitreadme",
+    demo: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7309807794516328448?compact=1",
+    tags: ["Next.js", "GCP", "Drizzle", "React"],
+  },
+
   "Habits Together": {
     title: "Habits Together",
     image: "/project-images/habits-together.webp",
     description:
-      "Leader of team building mobile app where you can track habits together with friends",
+      "Mobile app where you can track habits together with friends (in development)",
     link: "https://habitstogether.app/",
     github: "https://github.com/habits-together/app",
     demo: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7214987812134076416?compact=1",
